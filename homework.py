@@ -18,8 +18,8 @@ def polish_notation(operation):
                 print('На ноль делить нельзя!')
         else:
             print('Ошибка')
-    except IndexError:
-        print('Неверное значение')
+    except AssertionError:
+            print('Введено отрицательное число!')
 
 
 polish_notation(operation)
